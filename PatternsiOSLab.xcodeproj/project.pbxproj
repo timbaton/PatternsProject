@@ -73,7 +73,7 @@
 				7C8D66D52211981A00D8E204 /* DataManager.swift */,
 				CE41C9042219BD8900AE28F5 /* Strings.swift */,
 				CE41C9022219BC2700AE28F5 /* Extensions.swift */,
-				CE8026EB2219638600B86CD3 /* MYMVP */,
+				CE8026EB2219638600B86CD3 /* MVP */,
 				7C8D66C72211972C00D8E204 /* Assets.xcassets */,
 				7C8D66C92211972C00D8E204 /* LaunchScreen.storyboard */,
 				7C8D66CC2211972C00D8E204 /* Info.plist */,
@@ -88,7 +88,7 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		CE8026EB2219638600B86CD3 /* MYMVP */ = {
+		CE8026EB2219638600B86CD3 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
 				CE8026EC2219638600B86CD3 /* Presenter */,
@@ -96,7 +96,7 @@
 				CE8026F82219642700B86CD3 /* MVPStoryboard.storyboard */,
 				CE8026FA22199A4300B86CD3 /* MVPModuleConfigurator.swift */,
 			);
-			path = MYMVP;
+			path = MVP;
 			sourceTree = "<group>";
 		};
 		CE8026EC2219638600B86CD3 /* Presenter */ = {
