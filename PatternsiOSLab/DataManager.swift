@@ -10,12 +10,19 @@ import Foundation
 
 protocol DataManagerProtocol: AnyObject {
     
-    func obtainNames() -> [String]
+    /// получить необходимые методы
+    ///
+    /// - Returns: массив строк
+    func obtainOperations() -> [String]
 }
 
+/// вспомогательный класс, предоставляющий проекту данные
 class DataManager: DataManagerProtocol {
     
-    func obtainNames() -> [String] {
-        return ["Sasha", "Masha", "Egor"]
+    /// получить необходимые методы
+    ///
+    /// - Returns: массив строк
+    func obtainOperations() -> [String] {
+        return ["+", "-", "*", "/", "%", "^"]
     }
 }

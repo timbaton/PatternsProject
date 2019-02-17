@@ -8,66 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		7C8D66C12211972B00D8E204 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66C02211972B00D8E204 /* AppDelegate.swift */; };
-		7C8D66C32211972B00D8E204 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66C22211972B00D8E204 /* ViewController.swift */; };
-		7C8D66C62211972C00D8E204 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8D66C42211972C00D8E204 /* Main.storyboard */; };
 		7C8D66C82211972C00D8E204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8D66C72211972C00D8E204 /* Assets.xcassets */; };
 		7C8D66CB2211972C00D8E204 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8D66C92211972C00D8E204 /* LaunchScreen.storyboard */; };
 		7C8D66D62211981A00D8E204 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66D52211981A00D8E204 /* DataManager.swift */; };
-		7C8D66D92211998600D8E204 /* MVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66D82211998600D8E204 /* MVPViewController.swift */; };
-		7C8D66DB2211999100D8E204 /* MVPStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8D66DA2211999100D8E204 /* MVPStoryboard.storyboard */; };
-		7C8D66DD221199A800D8E204 /* MVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66DC221199A800D8E204 /* MVPPresenter.swift */; };
-		7C8D66E1221199E600D8E204 /* MVPViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66E0221199E600D8E204 /* MVPViewInput.swift */; };
-		7C8D66E3221199ED00D8E204 /* MVPViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66E2221199ED00D8E204 /* MVPViewOutput.swift */; };
-		7C8D66E522119BC700D8E204 /* MVPModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66E422119BC700D8E204 /* MVPModuleConfigurator.swift */; };
-		7C8D66E822119E0F00D8E204 /* MVVMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66E722119E0F00D8E204 /* MVVMViewModel.swift */; };
-		7C8D66EA22119E1600D8E204 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66E922119E1600D8E204 /* MVVMViewController.swift */; };
-		7C8D66EC22119E1E00D8E204 /* MVVMStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8D66EB22119E1E00D8E204 /* MVVMStoryboard.storyboard */; };
-		7C8D66EE22119E3400D8E204 /* MVVMViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66ED22119E3400D8E204 /* MVVMViewModelDelegate.swift */; };
-		7C8D66F22211A03C00D8E204 /* MVVMModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66F12211A03C00D8E204 /* MVVMModuleConfigurator.swift */; };
-		7C8D66F52211A14A00D8E204 /* VIPERStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8D66F42211A14A00D8E204 /* VIPERStoryboard.storyboard */; };
-		7C8D66F72211A15200D8E204 /* VIPERViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66F62211A15200D8E204 /* VIPERViewController.swift */; };
-		7C8D66F92211A16200D8E204 /* VIPERViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66F82211A16200D8E204 /* VIPERViewInput.swift */; };
-		7C8D66FB2211A16900D8E204 /* VIPERViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66FA2211A16900D8E204 /* VIPERViewOutput.swift */; };
-		7C8D66FF2211A17E00D8E204 /* VIPERPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66FE2211A17E00D8E204 /* VIPERPresenter.swift */; };
-		7C8D67022211A19900D8E204 /* VIPERInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D67012211A19900D8E204 /* VIPERInteractor.swift */; };
-		7C8D67042211A1A800D8E204 /* VIPERInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D67032211A1A800D8E204 /* VIPERInteractorInput.swift */; };
-		7C8D67062211A1B100D8E204 /* VIPERInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D67052211A1B100D8E204 /* VIPERInteractorOutput.swift */; };
-		7C8D67092211A1C200D8E204 /* VIPERRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D67082211A1C200D8E204 /* VIPERRouter.swift */; };
-		7C8D670B2211A1D100D8E204 /* VIPERRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D670A2211A1D100D8E204 /* VIPERRouterInput.swift */; };
-		7C8D670D2211A42E00D8E204 /* VIPERModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D670C2211A42E00D8E204 /* VIPERModuleConfigurator.swift */; };
+		CE41C9032219BC2700AE28F5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41C9022219BC2700AE28F5 /* Extensions.swift */; };
+		CE41C9052219BD8900AE28F5 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41C9042219BD8900AE28F5 /* Strings.swift */; };
+		CE8026F32219638600B86CD3 /* MVPPressenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8026ED2219638600B86CD3 /* MVPPressenter.swift */; };
+		CE8026F42219638600B86CD3 /* MVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8026EF2219638600B86CD3 /* MVPViewController.swift */; };
+		CE8026F52219638600B86CD3 /* MVPViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8026F02219638600B86CD3 /* MVPViewInput.swift */; };
+		CE8026F62219638600B86CD3 /* MVPViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8026F12219638600B86CD3 /* MVPViewOutput.swift */; };
+		CE8026F92219642700B86CD3 /* MVPStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8026F82219642700B86CD3 /* MVPStoryboard.storyboard */; };
+		CE8026FB22199A4300B86CD3 /* MVPModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8026FA22199A4300B86CD3 /* MVPModuleConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C8D66BD2211972B00D8E204 /* PatternsiOSLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatternsiOSLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8D66C02211972B00D8E204 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7C8D66C22211972B00D8E204 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7C8D66C52211972C00D8E204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C8D66C72211972C00D8E204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C8D66CA2211972C00D8E204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C8D66CC2211972C00D8E204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C8D66D52211981A00D8E204 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		7C8D66D82211998600D8E204 /* MVPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPViewController.swift; sourceTree = "<group>"; };
-		7C8D66DA2211999100D8E204 /* MVPStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVPStoryboard.storyboard; sourceTree = "<group>"; };
-		7C8D66DC221199A800D8E204 /* MVPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPPresenter.swift; sourceTree = "<group>"; };
-		7C8D66E0221199E600D8E204 /* MVPViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPViewInput.swift; sourceTree = "<group>"; };
-		7C8D66E2221199ED00D8E204 /* MVPViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPViewOutput.swift; sourceTree = "<group>"; };
-		7C8D66E422119BC700D8E204 /* MVPModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPModuleConfigurator.swift; sourceTree = "<group>"; };
-		7C8D66E722119E0F00D8E204 /* MVVMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewModel.swift; sourceTree = "<group>"; };
-		7C8D66E922119E1600D8E204 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
-		7C8D66EB22119E1E00D8E204 /* MVVMStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVVMStoryboard.storyboard; sourceTree = "<group>"; };
-		7C8D66ED22119E3400D8E204 /* MVVMViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewModelDelegate.swift; sourceTree = "<group>"; };
-		7C8D66F12211A03C00D8E204 /* MVVMModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMModuleConfigurator.swift; sourceTree = "<group>"; };
-		7C8D66F42211A14A00D8E204 /* VIPERStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VIPERStoryboard.storyboard; sourceTree = "<group>"; };
-		7C8D66F62211A15200D8E204 /* VIPERViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERViewController.swift; sourceTree = "<group>"; };
-		7C8D66F82211A16200D8E204 /* VIPERViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERViewInput.swift; sourceTree = "<group>"; };
-		7C8D66FA2211A16900D8E204 /* VIPERViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERViewOutput.swift; sourceTree = "<group>"; };
-		7C8D66FE2211A17E00D8E204 /* VIPERPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERPresenter.swift; sourceTree = "<group>"; };
-		7C8D67012211A19900D8E204 /* VIPERInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERInteractor.swift; sourceTree = "<group>"; };
-		7C8D67032211A1A800D8E204 /* VIPERInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERInteractorInput.swift; sourceTree = "<group>"; };
-		7C8D67052211A1B100D8E204 /* VIPERInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERInteractorOutput.swift; sourceTree = "<group>"; };
-		7C8D67082211A1C200D8E204 /* VIPERRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERRouter.swift; sourceTree = "<group>"; };
-		7C8D670A2211A1D100D8E204 /* VIPERRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERRouterInput.swift; sourceTree = "<group>"; };
-		7C8D670C2211A42E00D8E204 /* VIPERModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERModuleConfigurator.swift; sourceTree = "<group>"; };
+		CE41C9022219BC2700AE28F5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CE41C9042219BD8900AE28F5 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		CE8026ED2219638600B86CD3 /* MVPPressenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPPressenter.swift; sourceTree = "<group>"; };
+		CE8026EF2219638600B86CD3 /* MVPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPViewController.swift; sourceTree = "<group>"; };
+		CE8026F02219638600B86CD3 /* MVPViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPViewInput.swift; sourceTree = "<group>"; };
+		CE8026F12219638600B86CD3 /* MVPViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPViewOutput.swift; sourceTree = "<group>"; };
+		CE8026F82219642700B86CD3 /* MVPStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVPStoryboard.storyboard; sourceTree = "<group>"; };
+		CE8026FA22199A4300B86CD3 /* MVPModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPModuleConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +70,9 @@
 			children = (
 				7C8D66C02211972B00D8E204 /* AppDelegate.swift */,
 				7C8D66D52211981A00D8E204 /* DataManager.swift */,
-				7C8D66F32211A13D00D8E204 /* VIPER */,
-				7C8D66E622119DFB00D8E204 /* MVVM */,
-				7C8D66D72211997800D8E204 /* MVP */,
-				7C8D66D22211974600D8E204 /* MVC */,
+				CE41C9042219BD8900AE28F5 /* Strings.swift */,
+				CE41C9022219BC2700AE28F5 /* Extensions.swift */,
+				CE8026EB2219638600B86CD3 /* MYMVP */,
 				7C8D66C72211972C00D8E204 /* Assets.xcassets */,
 				7C8D66C92211972C00D8E204 /* LaunchScreen.storyboard */,
 				7C8D66CC2211972C00D8E204 /* Info.plist */,
@@ -113,136 +80,33 @@
 			path = PatternsiOSLab;
 			sourceTree = "<group>";
 		};
-		7C8D66D22211974600D8E204 /* MVC */ = {
+		CE8026EB2219638600B86CD3 /* MYMVP */ = {
 			isa = PBXGroup;
 			children = (
-				7C8D66D42211980700D8E204 /* Controller */,
-				7C8D66D3221197FF00D8E204 /* View */,
+				CE8026EC2219638600B86CD3 /* Presenter */,
+				CE8026EE2219638600B86CD3 /* View */,
+				CE8026F82219642700B86CD3 /* MVPStoryboard.storyboard */,
+				CE8026FA22199A4300B86CD3 /* MVPModuleConfigurator.swift */,
 			);
-			path = MVC;
+			path = MYMVP;
 			sourceTree = "<group>";
 		};
-		7C8D66D3221197FF00D8E204 /* View */ = {
+		CE8026EC2219638600B86CD3 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				7C8D66C42211972C00D8E204 /* Main.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		7C8D66D42211980700D8E204 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				7C8D66C22211972B00D8E204 /* ViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		7C8D66D72211997800D8E204 /* MVP */ = {
-			isa = PBXGroup;
-			children = (
-				7C8D66DF221199C000D8E204 /* Presenter */,
-				7C8D66DE221199B300D8E204 /* View */,
-				7C8D66DA2211999100D8E204 /* MVPStoryboard.storyboard */,
-				7C8D66E422119BC700D8E204 /* MVPModuleConfigurator.swift */,
-			);
-			path = MVP;
-			sourceTree = "<group>";
-		};
-		7C8D66DE221199B300D8E204 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7C8D66D82211998600D8E204 /* MVPViewController.swift */,
-				7C8D66E0221199E600D8E204 /* MVPViewInput.swift */,
-				7C8D66E2221199ED00D8E204 /* MVPViewOutput.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		7C8D66DF221199C000D8E204 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				7C8D66DC221199A800D8E204 /* MVPPresenter.swift */,
+				CE8026ED2219638600B86CD3 /* MVPPressenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		7C8D66E622119DFB00D8E204 /* MVVM */ = {
+		CE8026EE2219638600B86CD3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7C8D66F022119E4400D8E204 /* VIewModel */,
-				7C8D66EF22119E3C00D8E204 /* View */,
-				7C8D66EB22119E1E00D8E204 /* MVVMStoryboard.storyboard */,
-				7C8D66F12211A03C00D8E204 /* MVVMModuleConfigurator.swift */,
-			);
-			path = MVVM;
-			sourceTree = "<group>";
-		};
-		7C8D66EF22119E3C00D8E204 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7C8D66E922119E1600D8E204 /* MVVMViewController.swift */,
+				CE8026EF2219638600B86CD3 /* MVPViewController.swift */,
+				CE8026F02219638600B86CD3 /* MVPViewInput.swift */,
+				CE8026F12219638600B86CD3 /* MVPViewOutput.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		7C8D66F022119E4400D8E204 /* VIewModel */ = {
-			isa = PBXGroup;
-			children = (
-				7C8D66ED22119E3400D8E204 /* MVVMViewModelDelegate.swift */,
-				7C8D66E722119E0F00D8E204 /* MVVMViewModel.swift */,
-			);
-			path = VIewModel;
-			sourceTree = "<group>";
-		};
-		7C8D66F32211A13D00D8E204 /* VIPER */ = {
-			isa = PBXGroup;
-			children = (
-				7C8D67072211A1B700D8E204 /* Router */,
-				7C8D67002211A18100D8E204 /* Interactor */,
-				7C8D66FD2211A17300D8E204 /* Presenter */,
-				7C8D66FC2211A16C00D8E204 /* View */,
-				7C8D670C2211A42E00D8E204 /* VIPERModuleConfigurator.swift */,
-				7C8D66F42211A14A00D8E204 /* VIPERStoryboard.storyboard */,
-			);
-			path = VIPER;
-			sourceTree = "<group>";
-		};
-		7C8D66FC2211A16C00D8E204 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7C8D66F62211A15200D8E204 /* VIPERViewController.swift */,
-				7C8D66F82211A16200D8E204 /* VIPERViewInput.swift */,
-				7C8D66FA2211A16900D8E204 /* VIPERViewOutput.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		7C8D66FD2211A17300D8E204 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				7C8D66FE2211A17E00D8E204 /* VIPERPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		7C8D67002211A18100D8E204 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				7C8D67012211A19900D8E204 /* VIPERInteractor.swift */,
-				7C8D67032211A1A800D8E204 /* VIPERInteractorInput.swift */,
-				7C8D67052211A1B100D8E204 /* VIPERInteractorOutput.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		7C8D67072211A1B700D8E204 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				7C8D67082211A1C200D8E204 /* VIPERRouter.swift */,
-				7C8D670A2211A1D100D8E204 /* VIPERRouterInput.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,10 +170,7 @@
 			files = (
 				7C8D66CB2211972C00D8E204 /* LaunchScreen.storyboard in Resources */,
 				7C8D66C82211972C00D8E204 /* Assets.xcassets in Resources */,
-				7C8D66EC22119E1E00D8E204 /* MVVMStoryboard.storyboard in Resources */,
-				7C8D66C62211972C00D8E204 /* Main.storyboard in Resources */,
-				7C8D66F52211A14A00D8E204 /* VIPERStoryboard.storyboard in Resources */,
-				7C8D66DB2211999100D8E204 /* MVPStoryboard.storyboard in Resources */,
+				CE8026F92219642700B86CD3 /* MVPStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,42 +181,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C8D66DD221199A800D8E204 /* MVPPresenter.swift in Sources */,
-				7C8D66E822119E0F00D8E204 /* MVVMViewModel.swift in Sources */,
-				7C8D67062211A1B100D8E204 /* VIPERInteractorOutput.swift in Sources */,
-				7C8D67022211A19900D8E204 /* VIPERInteractor.swift in Sources */,
-				7C8D66F92211A16200D8E204 /* VIPERViewInput.swift in Sources */,
-				7C8D66D92211998600D8E204 /* MVPViewController.swift in Sources */,
-				7C8D66E522119BC700D8E204 /* MVPModuleConfigurator.swift in Sources */,
-				7C8D66EE22119E3400D8E204 /* MVVMViewModelDelegate.swift in Sources */,
-				7C8D66C32211972B00D8E204 /* ViewController.swift in Sources */,
-				7C8D66F22211A03C00D8E204 /* MVVMModuleConfigurator.swift in Sources */,
+				CE8026F52219638600B86CD3 /* MVPViewInput.swift in Sources */,
+				CE41C9052219BD8900AE28F5 /* Strings.swift in Sources */,
 				7C8D66D62211981A00D8E204 /* DataManager.swift in Sources */,
-				7C8D67042211A1A800D8E204 /* VIPERInteractorInput.swift in Sources */,
-				7C8D670B2211A1D100D8E204 /* VIPERRouterInput.swift in Sources */,
-				7C8D670D2211A42E00D8E204 /* VIPERModuleConfigurator.swift in Sources */,
-				7C8D66F72211A15200D8E204 /* VIPERViewController.swift in Sources */,
-				7C8D66EA22119E1600D8E204 /* MVVMViewController.swift in Sources */,
+				CE8026F62219638600B86CD3 /* MVPViewOutput.swift in Sources */,
+				CE41C9032219BC2700AE28F5 /* Extensions.swift in Sources */,
+				CE8026F32219638600B86CD3 /* MVPPressenter.swift in Sources */,
 				7C8D66C12211972B00D8E204 /* AppDelegate.swift in Sources */,
-				7C8D66FB2211A16900D8E204 /* VIPERViewOutput.swift in Sources */,
-				7C8D66FF2211A17E00D8E204 /* VIPERPresenter.swift in Sources */,
-				7C8D66E3221199ED00D8E204 /* MVPViewOutput.swift in Sources */,
-				7C8D67092211A1C200D8E204 /* VIPERRouter.swift in Sources */,
-				7C8D66E1221199E600D8E204 /* MVPViewInput.swift in Sources */,
+				CE8026F42219638600B86CD3 /* MVPViewController.swift in Sources */,
+				CE8026FB22199A4300B86CD3 /* MVPModuleConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7C8D66C42211972C00D8E204 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C8D66C52211972C00D8E204 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7C8D66C92211972C00D8E204 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -490,6 +330,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PatternsiOSLab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,7 +339,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -510,6 +351,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PatternsiOSLab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -517,7 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.iosLab.PatternsiOSLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dqW-h1-0pY">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="enE-3p-Ygo">
+            <objects>
+                <viewController id="dqW-h1-0pY" customClass="MVPViewController" customModule="PatternsiOSLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r3c-vo-pXc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yz6-QS-p73">
+                                <rect key="frame" x="147.66666666666666" y="56" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="KKn-L6-36w"/>
+                                    <constraint firstAttribute="width" constant="80" id="Vib-3Y-XPJ"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nd4-hW-7jg">
+                                <rect key="frame" x="155.66666666666666" y="165" width="64" height="30"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="btnCalculate:" destination="dqW-h1-0pY" eventType="touchUpInside" id="Kgv-JQ-zNt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6G-B9-Ekj">
+                                <rect key="frame" x="16" y="245" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mGf-cc-X1E">
+                                <rect key="frame" x="16.000000000000007" y="81" width="111.66666666666669" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GHA-PZ-mF6">
+                                <rect key="frame" x="247.66666666666666" y="81" width="111.33333333333334" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GHA-PZ-mF6" firstAttribute="leading" secondItem="yz6-QS-p73" secondAttribute="trailing" constant="20" id="35U-pa-h3k"/>
+                            <constraint firstItem="yz6-QS-p73" firstAttribute="top" secondItem="gXV-gm-1Si" secondAttribute="top" constant="12" id="3oZ-iz-h7m"/>
+                            <constraint firstItem="yz6-QS-p73" firstAttribute="leading" secondItem="mGf-cc-X1E" secondAttribute="trailing" constant="20" id="Mwv-Ax-sjK"/>
+                            <constraint firstItem="mGf-cc-X1E" firstAttribute="leading" secondItem="gXV-gm-1Si" secondAttribute="leading" constant="16" id="WIO-kZ-I3v"/>
+                            <constraint firstItem="GHA-PZ-mF6" firstAttribute="centerY" secondItem="yz6-QS-p73" secondAttribute="centerY" id="X2a-k7-lwg"/>
+                            <constraint firstItem="K6G-B9-Ekj" firstAttribute="top" secondItem="Nd4-hW-7jg" secondAttribute="bottom" constant="50" id="bco-Bm-GbP"/>
+                            <constraint firstItem="Nd4-hW-7jg" firstAttribute="centerX" secondItem="r3c-vo-pXc" secondAttribute="centerX" id="gNX-nk-ujE"/>
+                            <constraint firstItem="gXV-gm-1Si" firstAttribute="trailing" secondItem="GHA-PZ-mF6" secondAttribute="trailing" constant="16" id="jJY-KR-URv"/>
+                            <constraint firstItem="gXV-gm-1Si" firstAttribute="trailing" secondItem="K6G-B9-Ekj" secondAttribute="trailing" constant="16" id="kdF-np-rJ5"/>
+                            <constraint firstItem="mGf-cc-X1E" firstAttribute="centerY" secondItem="yz6-QS-p73" secondAttribute="centerY" id="qWW-sO-F5h"/>
+                            <constraint firstItem="K6G-B9-Ekj" firstAttribute="leading" secondItem="gXV-gm-1Si" secondAttribute="leading" constant="16" id="tMd-b3-9RH"/>
+                            <constraint firstItem="yz6-QS-p73" firstAttribute="centerX" secondItem="r3c-vo-pXc" secondAttribute="centerX" id="v0F-pV-7XI"/>
+                            <constraint firstItem="Nd4-hW-7jg" firstAttribute="top" secondItem="yz6-QS-p73" secondAttribute="bottom" constant="29" id="zNe-TV-4Ac"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gXV-gm-1Si"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstValue" destination="mGf-cc-X1E" id="L1Z-k4-WS3"/>
+                        <outlet property="pickerView" destination="yz6-QS-p73" id="mJb-wq-OqP"/>
+                        <outlet property="secondValue" destination="GHA-PZ-mF6" id="sxi-BV-e7I"/>
+                        <outlet property="tvResult" destination="K6G-B9-Ekj" id="xKA-ap-R6H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bV-Gf-FvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="WWV-CY-JLT" customClass="MVPModuleConfigurator" customModule="PatternsiOSLab" customModuleProvider="target">
+                    <connections>
+                        <outlet property="viewController" destination="dqW-h1-0pY" id="U36-bk-NNI"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.339901477832512"/>
+        </scene>
+    </scenes>
+</document>
