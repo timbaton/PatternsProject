@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		7C8D66C12211972B00D8E204 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66C02211972B00D8E204 /* AppDelegate.swift */; };
 		7C8D66C82211972C00D8E204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8D66C72211972C00D8E204 /* Assets.xcassets */; };
-		7C8D66CB2211972C00D8E204 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8D66C92211972C00D8E204 /* LaunchScreen.storyboard */; };
 		7C8D66D62211981A00D8E204 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D66D52211981A00D8E204 /* DataManager.swift */; };
 		CE41C9032219BC2700AE28F5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41C9022219BC2700AE28F5 /* Extensions.swift */; };
 		CE41C9052219BD8900AE28F5 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41C9042219BD8900AE28F5 /* Strings.swift */; };
+		CE41C90B2219E92C00AE28F5 /* MVVMStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE41C90A2219E92C00AE28F5 /* MVVMStoryboard.storyboard */; };
+		CE41C90D2219E96700AE28F5 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41C90C2219E96700AE28F5 /* MVVMViewController.swift */; };
+		CE41C90F2219EA7D00AE28F5 /* MVVMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41C90E2219EA7D00AE28F5 /* MVVMViewModel.swift */; };
+		CE41C9112219EA9600AE28F5 /* MVVMViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41C9102219EA9600AE28F5 /* MVVMViewModelDelegate.swift */; };
+		CE41C9132219F76900AE28F5 /* MVVMConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41C9122219F76900AE28F5 /* MVVMConfigurator.swift */; };
 		CE8026F32219638600B86CD3 /* MVPPressenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8026ED2219638600B86CD3 /* MVPPressenter.swift */; };
 		CE8026F42219638600B86CD3 /* MVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8026EF2219638600B86CD3 /* MVPViewController.swift */; };
 		CE8026F52219638600B86CD3 /* MVPViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8026F02219638600B86CD3 /* MVPViewInput.swift */; };
@@ -25,11 +29,15 @@
 		7C8D66BD2211972B00D8E204 /* PatternsiOSLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatternsiOSLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8D66C02211972B00D8E204 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C8D66C72211972C00D8E204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7C8D66CA2211972C00D8E204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C8D66CC2211972C00D8E204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C8D66D52211981A00D8E204 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CE41C9022219BC2700AE28F5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CE41C9042219BD8900AE28F5 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		CE41C90A2219E92C00AE28F5 /* MVVMStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVVMStoryboard.storyboard; sourceTree = "<group>"; };
+		CE41C90C2219E96700AE28F5 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
+		CE41C90E2219EA7D00AE28F5 /* MVVMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewModel.swift; sourceTree = "<group>"; };
+		CE41C9102219EA9600AE28F5 /* MVVMViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewModelDelegate.swift; sourceTree = "<group>"; };
+		CE41C9122219F76900AE28F5 /* MVVMConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMConfigurator.swift; sourceTree = "<group>"; };
 		CE8026ED2219638600B86CD3 /* MVPPressenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPPressenter.swift; sourceTree = "<group>"; };
 		CE8026EF2219638600B86CD3 /* MVPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPViewController.swift; sourceTree = "<group>"; };
 		CE8026F02219638600B86CD3 /* MVPViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPViewInput.swift; sourceTree = "<group>"; };
@@ -68,24 +76,44 @@
 		7C8D66BF2211972B00D8E204 /* PatternsiOSLab */ = {
 			isa = PBXGroup;
 			children = (
-				CE41C9062219E71500AE28F5 /* New Group */,
+				CE41C9072219E8BD00AE28F5 /* MVVM */,
+				CE8026EB2219638600B86CD3 /* MVP */,
 				7C8D66C02211972B00D8E204 /* AppDelegate.swift */,
 				7C8D66D52211981A00D8E204 /* DataManager.swift */,
 				CE41C9042219BD8900AE28F5 /* Strings.swift */,
 				CE41C9022219BC2700AE28F5 /* Extensions.swift */,
-				CE8026EB2219638600B86CD3 /* MVP */,
 				7C8D66C72211972C00D8E204 /* Assets.xcassets */,
-				7C8D66C92211972C00D8E204 /* LaunchScreen.storyboard */,
 				7C8D66CC2211972C00D8E204 /* Info.plist */,
 			);
 			path = PatternsiOSLab;
 			sourceTree = "<group>";
 		};
-		CE41C9062219E71500AE28F5 /* New Group */ = {
+		CE41C9072219E8BD00AE28F5 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				CE41C9092219E91200AE28F5 /* ViewModel */,
+				CE41C9082219E90B00AE28F5 /* View */,
+				CE41C90A2219E92C00AE28F5 /* MVVMStoryboard.storyboard */,
+				CE41C9122219F76900AE28F5 /* MVVMConfigurator.swift */,
 			);
-			path = "New Group";
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		CE41C9082219E90B00AE28F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE41C90C2219E96700AE28F5 /* MVVMViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE41C9092219E91200AE28F5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE41C90E2219EA7D00AE28F5 /* MVVMViewModel.swift */,
+				CE41C9102219EA9600AE28F5 /* MVVMViewModelDelegate.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CE8026EB2219638600B86CD3 /* MVP */ = {
@@ -176,7 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C8D66CB2211972C00D8E204 /* LaunchScreen.storyboard in Resources */,
+				CE41C90B2219E92C00AE28F5 /* MVVMStoryboard.storyboard in Resources */,
 				7C8D66C82211972C00D8E204 /* Assets.xcassets in Resources */,
 				CE8026F92219642700B86CD3 /* MVPStoryboard.storyboard in Resources */,
 			);
@@ -195,24 +223,17 @@
 				CE8026F62219638600B86CD3 /* MVPViewOutput.swift in Sources */,
 				CE41C9032219BC2700AE28F5 /* Extensions.swift in Sources */,
 				CE8026F32219638600B86CD3 /* MVPPressenter.swift in Sources */,
+				CE41C90D2219E96700AE28F5 /* MVVMViewController.swift in Sources */,
+				CE41C9112219EA9600AE28F5 /* MVVMViewModelDelegate.swift in Sources */,
+				CE41C90F2219EA7D00AE28F5 /* MVVMViewModel.swift in Sources */,
 				7C8D66C12211972B00D8E204 /* AppDelegate.swift in Sources */,
 				CE8026F42219638600B86CD3 /* MVPViewController.swift in Sources */,
+				CE41C9132219F76900AE28F5 /* MVVMConfigurator.swift in Sources */,
 				CE8026FB22199A4300B86CD3 /* MVPModuleConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		7C8D66C92211972C00D8E204 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C8D66CA2211972C00D8E204 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7C8D66CD2211972C00D8E204 /* Debug */ = {
