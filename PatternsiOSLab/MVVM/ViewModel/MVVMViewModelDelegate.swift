@@ -9,10 +9,17 @@
 import Foundation
 
 protocol MVVMViewModelDelegate: AnyObject {
+    /// переменная для наблюдения за изменением результатов
     var result: Double? { get set }
+    
+    /// переменная для наблюдения за изменением методов
     var operations: [String]? { get set }
     
+    /// блок, вызывающийся при изменении результата
     var didChangeResultHandler: ((MVVMViewModelDelegate) -> ())? { get set}
+    
+    //блок, вызывающийся при изменении операций
+    var didChangeOperationsHandler: ((MVVMViewModelDelegate) -> ())? { get set }
     
     init(dataManager: DataManagerProtocol, strings: Strings)
     

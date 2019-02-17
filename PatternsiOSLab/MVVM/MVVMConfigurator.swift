@@ -27,8 +27,12 @@ class MVVMConfigurator: NSObject {
         
         let data: DataManagerProtocol = DataManager()
         let strings = Strings()
+        
+        //Иньектируем в ViewModel dataManager и strings
         let viewModel = MVVMViewModel(dataManager: data, strings: strings)
         
+        //устанавлием для вьюшки viewModel и string
         view.viewModel = viewModel
+        view.strings = strings
     }
 }

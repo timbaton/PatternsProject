@@ -14,7 +14,7 @@ class MVVMViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     /// строки
     var strings: Strings!
     
-    /// методы
+    /// пикер
     @IBOutlet weak var pickerView: UIPickerView!
     /// первое значение
     @IBOutlet weak var firstValue: UITextField!
@@ -30,21 +30,22 @@ class MVVMViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         pickerView.delegate = self
         
         operations = []
-g        viewModel?.didLoad()
+        viewModel?.didLoad()
     }
     
     /// биндинг viewModel
     var viewModel: MVVMViewModel?{
         didSet{
             viewModel?.didChangeResultHandler = { [weak self] delegate in
-                self?.tvResult.text = "\(delegate.result)"
+                let selectedValue = self?.operations[(self?.pickerView.selectedRow(inComponent: 0))!]
+                self?.tvResult.text = "\(self?.firstValue.text ?? "")  \(selectedValue ?? "") \(self?.secondValue.text ?? "") = \(delegate.result ?? 0.0)"
             }
         }
     }
     
     // MARK: - Setting pickerView
     
-    /// обновление пикера
+    /// биндинг пикера
     var operations: [String]! {
         didSet{
             viewModel?.didChangeOperationsHandler = { [weak self] delegate in
@@ -69,9 +70,20 @@ g        viewModel?.didLoad()
         return operations.count
     }
     
+    /// отображение алерта
+    ///
+    /// - Parameter error: сообщение, String
+    func showAlert(error: String){
+        let alert = UIAlertController(title: strings.alert_title, message: error, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: strings.alert_ok, style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     /// Обработка нажатия кнопки
     @IBAction func btnCalculate(_ sender: Any) {
         let selectedValue = operations[pickerView.selectedRow(inComponent: 0)]
-        viewModel?.didCalculatePressed(firstValue: firstValue.text!, secondValue: secondValue.text!, operation: selectedValue)
+        viewModel?.didCalculatePressed(firstValue: firstValue.text!, secondValue: secondValue.text!, operation: selectedValue) { error in
+            showAlert(error: error)
+        }
     }
 }

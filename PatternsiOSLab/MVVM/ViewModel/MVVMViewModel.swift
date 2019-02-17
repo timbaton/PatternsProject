@@ -10,43 +10,48 @@ import Foundation
 
 class MVVMViewModel: MVVMViewModelDelegate {
     
+    var dataManager: DataManagerProtocol!
+    var strings: Strings!
+    var didChangeResultHandler: ((MVVMViewModelDelegate) -> ())?
+    var didChangeOperationsHandler: ((MVVMViewModelDelegate) -> ())?
+    
+//    when we set the result, it call the closure
     var result: Double? {
         didSet{
             didChangeResultHandler?(self)
         }
     }
     
+//      when we set the operations, it call the closure
     var operations: [String]? {
         didSet{
             didChangeOperationsHandler?(self)
         }
     }
     
-    var dataManager: DataManagerProtocol!
-    var strings: Strings!
-    var didChangeResultHandler: ((MVVMViewModelDelegate) -> ())?
-    var didChangeOperationsHandler: ((MVVMViewModelDelegate) -> ())?
-    
     required init(dataManager: DataManagerProtocol, strings: Strings) {
         self.dataManager = dataManager
         self.strings = strings
     }
     
+    /// метод нужен для того, чтобы загрузить возможные пользователю методы
     func didLoad() {
+        //set operations
         operations = dataManager.obtainOperations()
     }
+    
     /// обработка нажатия кнопки подсчета
-    func didCalculatePressed(firstValue: String, secondValue: String, operation: String){
+    func didCalculatePressed(firstValue: String, secondValue: String, operation: String,  showError: (_ text: String) -> ()){
         if (firstValue != "" && secondValue != ""){
             if (firstValue.isDouble && secondValue.isDouble){
                 result = calculate(firstvalue: Double(firstValue)!, secondValuse: Double(secondValue)!, operation: operation)
             } else {
-                //если входные данные - не числа
-                result = 0
+                //если входные данные не числа - вызываем пришедший метод с сообщением
+                showError(strings.error_filed_not_number)
             }
         } else {
-            //если входные данные пустые
-            result = 0
+            //если входные данные пустые - вызываем пришедший метод с сообщением
+            showError(strings.error_field_empty)
         }
     }
     
@@ -130,18 +135,4 @@ class MVVMViewModel: MVVMViewModelDelegate {
     func  power(firstvalue: Double, secondValuse: Double) -> Double {
         return pow(firstvalue, secondValuse)
     }
-//    func showMessage(text: String?) {
-//        <#code#>
-//    }
-//
-//    func printMessage(text: String?) {
-//        <#code#>
-//    }
-//
-//    func showResult(firstValue: String, secondValue: String, operation: String, result: Double) {
-//        <#code#>
-//    }
-//
-//
-//
 }
