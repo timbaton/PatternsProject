@@ -16,4 +16,8 @@ class Strings {
     let error_field_empty = "Поля не должны быть пустыми"
     /// сообщение, в случае пустых полей
     let error_filed_not_number = "Проверьте корректность введынных полей"
+    
+    //MARK: - alert
+    let alert_ok = "Ok"
+    let alert_title = ""
 }

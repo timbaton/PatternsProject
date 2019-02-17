@@ -68,6 +68,7 @@
 		7C8D66BF2211972B00D8E204 /* PatternsiOSLab */ = {
 			isa = PBXGroup;
 			children = (
+				CE41C9062219E71500AE28F5 /* New Group */,
 				7C8D66C02211972B00D8E204 /* AppDelegate.swift */,
 				7C8D66D52211981A00D8E204 /* DataManager.swift */,
 				CE41C9042219BD8900AE28F5 /* Strings.swift */,
@@ -78,6 +79,13 @@
 				7C8D66CC2211972C00D8E204 /* Info.plist */,
 			);
 			path = PatternsiOSLab;
+			sourceTree = "<group>";
+		};
+		CE41C9062219E71500AE28F5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		CE8026EB2219638600B86CD3 /* MYMVP */ = {
@@ -328,7 +336,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PatternsiOSLab/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -337,6 +346,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.iosLab.PatternsiOSLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -349,7 +359,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PatternsiOSLab/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +369,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.iosLab.PatternsiOSLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

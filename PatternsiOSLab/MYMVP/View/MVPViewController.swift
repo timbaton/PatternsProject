@@ -14,6 +14,8 @@ class MVPViewController: UIViewController, MVPViewInput, UIPickerViewDelegate, U
     var operations: [String]!
     /// презентер вьюшки
     var presenter: MVPViewOutput!
+    /// строки
+    var strings: Strings!
     
     /// методы
     @IBOutlet weak var pickerView: UIPickerView!
@@ -80,8 +82,8 @@ class MVPViewController: UIViewController, MVPViewInput, UIPickerViewDelegate, U
     ///
     /// - Parameter text: текст сообщения
     func showMessage(text: String?) {
-        let alert = UIAlertController(title: "", message: text, preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        let alert = UIAlertController(title: strings.alert_title, message: text, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: strings.alert_ok, style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     

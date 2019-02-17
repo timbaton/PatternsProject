@@ -33,7 +33,8 @@ class MVPModuleConfigurator: NSObject {
         presenter.dataManager = data
         presenter.strings = strings
         
-        //connect presenter to View
+        //connect presenter and strings to View
         view.presenter = presenter
+        view.strings = strings
     }
 }
